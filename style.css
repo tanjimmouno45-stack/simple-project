@@ -409,8 +409,92 @@ p {
     font-weight: bold;
     color: #4ade80; 
 }
+.episodes-section{
+    width: 100%;
+    height: 100%;
+}
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+    font-weight: 700;
+    color: white;
+}
 
 
+.episodes-container {
+    display: flex;
+    gap: 30px;
+    width: 1600px;
+    
+
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.05); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    width: 350px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    transform: translateY(-5px);
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(45deg, #d4145a, #fbab7e); 
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #b3b3b3;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.duration {
+    display: block;
+    font-size: 14px;
+    color: #4ade80; 
+    font-weight: bold;
+}
 @media (max-width: 576px) {
     .checkbtn {
         display: block;
@@ -497,6 +581,9 @@ p {
         display: flex;             
         flex-direction: column;    
         gap: 15px;
+    }
+    .card {
+        width: 100%;
     }
 }
 
