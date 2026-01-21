@@ -502,14 +502,15 @@ p {
 }
 .top{
     background-color: #1A0B2E;
+    max-width: 1600px;
 }
 
         .top-headline-xtra {
             font-size: 36px;
             font-weight: 800;
             color: white;
-            margin-bottom: 30px;
             text-align: center;
+            
         
         }
 
@@ -594,6 +595,50 @@ p {
             height: 100%;
             object-fit: cover;
         }
+        .main-footer {
+  background: linear-gradient(135deg, #1a0033, #3b0066);
+  color: white;
+  padding-top: 60px;
+}
+
+
+
+
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.center-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.center-content h1 span {
+  color: #ff3cac;
+}
+
+
+.social-images {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-images img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 
 @media (max-width: 576px) {
     .checkbtn {
@@ -689,15 +734,14 @@ p {
     .card {
         width: 100%;
     }
+    
     .top-headline-xtra {
                 font-size: 26px;
             }
 
-            .mega-profile-wrapper-z1 {
-                flex-direction: column;
-                padding: 40px 20px;
-                text-align: center;
-                gap: 30px;
+            .mega-profile-wrapper-z1{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
             }
 
             .prime-avatar-frame-q9 {
@@ -711,11 +755,35 @@ p {
 
             .bio-text-flow-y2 {
                 font-size: 15px;
+                flex-wrap: wrap;
             }
 
             .social-grid-wrap-m5 {
                 justify-content: center;
             }
+            .footer-content {
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .center-content h1 {
+    font-size: 32px;
+  }
+
+  .wave-line {
+    width: 200px;
+    height: 50px;
+  }
+
+  .social-images {
+    gap: 15px;
+  }
+
+  .social-images img {
+    width: 32px;
+    height: 32px;
+  }
     
            
 }
