@@ -338,7 +338,7 @@ p {
     display: flex;
     justify-content: center;
     gap: 25px; 
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -427,7 +427,7 @@ p {
 .episodes-container {
     display: flex;
     gap: 30px;
-    width: 1600px;
+   max-width: 1600px;
     
 
 }
@@ -641,6 +641,10 @@ p {
     .content p {
         font-size: 0.9rem;
         padding: 0 10px;
+    }
+    .episodes-container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 
 
