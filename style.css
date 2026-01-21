@@ -596,7 +596,13 @@ p {
             object-fit: cover;
         }
         .main-footer {
-  background: linear-gradient(135deg, #1a0033, #3b0066);
+  background-image: url("assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+        .main-footer {
+  
   color: white;
   padding-top: 60px;
 }
@@ -626,7 +632,7 @@ p {
 }
 
 
-.social-images {
+/*.social-images {
   margin: 20px 0;
   display: flex;
   justify-content: center;
@@ -636,6 +642,27 @@ p {
 .social-images img {
   width: 40px;
   height: 40px;
+  object-fit: contain;
+}*/
+.social-images {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.social-item img {
+  width: 24px;
+  height: 24px;
   object-fit: contain;
 }
 
@@ -783,6 +810,9 @@ p {
   .social-images img {
     width: 32px;
     height: 32px;
+  }
+  .main-footer {
+    background-position: center;
   }
     
            
